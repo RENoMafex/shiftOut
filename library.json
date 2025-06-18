@@ -1,0 +1,22 @@
+{
+    "name": "shiftOut",
+    "version": "0.1.0",
+    "description": "Some useful overloads for the Arduino shiftOut() function.",
+    "keywords": "Arduino, shiftOut, shift",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/RENoMafex/shiftOut.git"
+    },
+    "authors":
+    [
+        {
+            "name": "Malte Schilling",
+            "email": "schilling.malte@googlemail.com",
+            "maintainer": true
+        }
+    ],
+    "license": "LGPL-3.0-or-later",
+    "frameworks": "arduino",
+    "platforms": "*"
+}
