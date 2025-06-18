@@ -1,6 +1,6 @@
 {
     "name": "shiftOut",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Some useful overloads for the Arduino shiftOut() function.",
     "keywords": "Arduino, shiftOut, shift",
     "repository":

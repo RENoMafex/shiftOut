@@ -72,6 +72,6 @@ void shiftOut(pin_size_t dataPin, pin_size_t clockPin, BitOrder bitOrder, uint8_
 
 void shiftOut(pin_size_t dataPin, pin_size_t clockPin, pin_size_t latchPin, BitOrder bitOrder, uint8_t vals[], size_t vals_length) {
     digitalWrite(latchPin, LOW);
-    shiftOut(dataPin, clockPin, bitOrder, vals[], vals_length);
+    shiftOut(dataPin, clockPin, bitOrder, vals, vals_length);
     digitalWrite(latchPin, HIGH);
 }
