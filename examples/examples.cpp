@@ -3,9 +3,9 @@
 #include <Arduino.h>
 #include <shiftOut.hpp>
 
-constexpr pin_size_t dataPin = 5;
-constexpr pin_size_t clockPin = 6;
-constexpr pin_size_t latchPin = 7;
+constexpr uint8_t dataPin = 5;
+constexpr uint8_t clockPin = 6;
+constexpr uint8_t latchPin = 7;
 
 constexpr uint8_t myArray[3] = {12,13,15};
 constexpr uint64_t longNum = 0xffffffffffffffff;
