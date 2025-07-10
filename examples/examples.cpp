@@ -17,9 +17,14 @@ void setup() {
 }
 
 void loop() {
+    // The "static_cast<unsigned char>()" is used, because on some platforms LSBFIRST is set with
+    // #define LSBFIRST 0, which could lead to errors, as a 0 can be interpreted as nullptr.
+    // The static cast makes sure, that the argument is casted into something, which isnt a
+    // pointer, so that the overload isn't ambigous!
+
     // shifts the values 12, 13, 15 out to 3 shift registers.
-    shiftOut(dataPin, clockPin, MSBFIRST, myArray, 3);
+    shiftOut(dataPin, clockPin, static_cast<unsigned char>(MSBFIRST), myArray, 3);
 
     // shifts the value 18446744073709551615 out to 8 shift registers.
-    shiftOut(dataPin, clockPin, latchPin, LSBFIRST, longNum);
+    shiftOut(dataPin, clockPin, latchPin, static_cast<unsigned char>(LSBFIRST), longNum);
 }
