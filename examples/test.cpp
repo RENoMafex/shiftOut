@@ -20,7 +20,7 @@ void setup(){
 }
 
 void loop(){
-    uint8_t arr[arrSize] = {254, 254};
+    uint8_t arr[arrSize] = {1, 1};
 
     while (bigvar != UINT16_MAX){
         shiftOut(DATAPIN, CLOCKPIN, BLANKPIN, BITORDER, bigvar++);
@@ -28,8 +28,8 @@ void loop(){
     bigvar++;
 
     shiftOut(DATAPIN, CLOCKPIN, BLANKPIN, BITORDER, arr, arrSize);
-    arr[0]+=3;
-    arr[1]+=3;
+    arr[0]-=3;
+    arr[1]-=3;
     delay(1000);
     shiftOut(DATAPIN, CLOCKPIN, BLANKPIN, BITORDER, arr, arrSize);
     delay(1000);
@@ -41,7 +41,7 @@ void loop(){
 platformio.ini:
 
 [env]
-lib_deps = RENoMafex/shiftOut@1.0.0
+lib_deps = RENoMafex/shiftOut@v1.0.0
 framework = arduino
 
 [env:arduino_uno_r3]
