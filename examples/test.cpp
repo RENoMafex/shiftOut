@@ -41,7 +41,7 @@ void loop(){
 platformio.ini:
 
 [env]
-lib_deps = RENoMafex/shiftOut@v1.0.0
+lib_deps = RENoMafex/shiftOut@1.0.0
 framework = arduino
 
 [env:arduino_uno_r3]
