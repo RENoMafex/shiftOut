@@ -1,3 +1,8 @@
+/*
+This is the real code i used for testing the library. Tested on Arduino Mega2560, Uno R3 and Uno R4 WiFi.
+As you see at the end of this file, the Library at least compiles for every possible platform.
+*/
+
 #include <Arduino.h>
 #include <shiftOut.hpp>
 
