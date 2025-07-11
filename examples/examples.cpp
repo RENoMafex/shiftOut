@@ -23,8 +23,8 @@ void loop() {
     // pointer, so that the overload isn't ambigous!
 
     // shifts the values 12, 13, 15 out to 3 shift registers.
-    shiftOut(dataPin, clockPin, static_cast<unsigned char>(MSBFIRST), myArray, 3);
+    shiftOut(dataPin, clockPin, MSBFIRST, myArray, 3);
 
     // shifts the value 18446744073709551615 out to 8 shift registers.
-    shiftOut(dataPin, clockPin, latchPin, static_cast<unsigned char>(LSBFIRST), longNum);
+    shiftOut(dataPin, clockPin, latchPin, LSBFIRST, longNum);
 }
